@@ -15,10 +15,13 @@ namespace Razor.Controllers
             Category = "Watersports",
             Price = 275M
         };
+
         // GET: Home
         public ActionResult Index() {
             return View(myProduct);
         }
+
+        //returns Name and Price for single Product
         public ActionResult NameAndPrice() {
             return View(myProduct);
         }
