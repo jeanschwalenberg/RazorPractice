@@ -27,6 +27,17 @@
                         break;
                 }
             </td>
+            @*
+            Alternatively,
+            <td>
+                @if (ViewBag.ProductCount == 0) {
+                    @: Out of Stock
+                } else if (ViewBag.ProductCount == 1) {
+                    <b>Low Stock (@ViewBag.ProductCount)</b>
+                } else {
+                    @ViewBag.ProductCount
+                }    
+            *@
         </tr>
     </tbody>
 </table>
