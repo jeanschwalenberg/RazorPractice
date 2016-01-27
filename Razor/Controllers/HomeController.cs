@@ -36,6 +36,7 @@ namespace Razor.Controllers
             return View(myProduct);
         }
 
+        //to insert arrays
         public ActionResult DemoArray() {
             Product[] array = {
                 new Product {Name = "Kayak", Price = 275M },
